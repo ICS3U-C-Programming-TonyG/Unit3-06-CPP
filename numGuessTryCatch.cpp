@@ -32,9 +32,9 @@ int main() {
         if (numberAsInt == someRandomNumber) {
             std::cout << "Congratulations! Correct!" << std::endl;
         } else {
-            std::cout << "Incorrect, try again :(" << std::endl;
+            std::cout << "Incorrect, try again :( correct number was " <<someRandomNumber << std::endl;
         }
     } catch (const std::invalid_argument) {
-        std::cout << "That was not an integer!" << std::endl;
+        std::cout << numberAsString << " is not an integer!" << std::endl;
     }
 }
